@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace InvestigacionDeOperaciones
 {
     public partial class Form1 : Form
@@ -15,6 +16,21 @@ namespace InvestigacionDeOperaciones
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            Update();
+        }
+
+        private void RInput_TextChanged(object sender, EventArgs e)
+        {
+            Update();
         }
     }
 }

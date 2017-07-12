@@ -1,0 +1,9 @@
+C:\Users\Jordan\Documents\Visual Studio 2017\Projects\InvestigacionDeOperaciones\InvestigacionDeOperaciones\bin\Debug\InvestigacionDeOperaciones.exe.config
+C:\Users\Jordan\Documents\Visual Studio 2017\Projects\InvestigacionDeOperaciones\InvestigacionDeOperaciones\bin\Debug\InvestigacionDeOperaciones.exe
+C:\Users\Jordan\Documents\Visual Studio 2017\Projects\InvestigacionDeOperaciones\InvestigacionDeOperaciones\bin\Debug\InvestigacionDeOperaciones.pdb
+C:\Users\Jordan\Documents\Visual Studio 2017\Projects\InvestigacionDeOperaciones\InvestigacionDeOperaciones\obj\Debug\InvestigacionDeOperaciones.csprojResolveAssemblyReference.cache
+C:\Users\Jordan\Documents\Visual Studio 2017\Projects\InvestigacionDeOperaciones\InvestigacionDeOperaciones\obj\Debug\InvestigacionDeOperaciones.Form1.resources
+C:\Users\Jordan\Documents\Visual Studio 2017\Projects\InvestigacionDeOperaciones\InvestigacionDeOperaciones\obj\Debug\InvestigacionDeOperaciones.Properties.Resources.resources
+C:\Users\Jordan\Documents\Visual Studio 2017\Projects\InvestigacionDeOperaciones\InvestigacionDeOperaciones\obj\Debug\InvestigacionDeOperaciones.csproj.GenerateResource.Cache
+C:\Users\Jordan\Documents\Visual Studio 2017\Projects\InvestigacionDeOperaciones\InvestigacionDeOperaciones\obj\Debug\InvestigacionDeOperaciones.exe
+C:\Users\Jordan\Documents\Visual Studio 2017\Projects\InvestigacionDeOperaciones\InvestigacionDeOperaciones\obj\Debug\InvestigacionDeOperaciones.pdb

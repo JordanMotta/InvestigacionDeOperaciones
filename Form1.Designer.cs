@@ -28,61 +28,61 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series19 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series20 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series21 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series22 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series23 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series24 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.Chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.RInput = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.Years = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Chart)).BeginInit();
             this.SuspendLayout();
             // 
             // Chart
             // 
-            chartArea2.AxisX.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Months;
-            chartArea2.AxisX.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Months;
-            chartArea2.IsSameFontSizeForAllAxes = true;
-            chartArea2.Name = "ChartArea";
-            this.Chart.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.Chart.Legends.Add(legend2);
+            chartArea4.AxisX.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Months;
+            chartArea4.AxisX.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Months;
+            chartArea4.IsSameFontSizeForAllAxes = true;
+            chartArea4.Name = "ChartArea";
+            this.Chart.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.Chart.Legends.Add(legend4);
             this.Chart.Location = new System.Drawing.Point(148, 22);
             this.Chart.Name = "Chart";
             this.Chart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
             this.Chart.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            series7.ChartArea = "ChartArea";
-            series7.Legend = "Legend1";
-            series7.Name = "Inventario Inicial";
-            series8.ChartArea = "ChartArea";
-            series8.Legend = "Legend1";
-            series8.Name = "Numero aleatorio";
-            series9.ChartArea = "ChartArea";
-            series9.Legend = "Legend1";
-            series9.Name = "Demanda Ajustada";
-            series10.ChartArea = "ChartArea";
-            series10.Legend = "Legend1";
-            series10.Name = "Inventario Final";
-            series11.ChartArea = "ChartArea";
-            series11.Legend = "Legend1";
-            series11.Name = "Faltante";
-            series12.ChartArea = "ChartArea";
-            series12.Legend = "Legend1";
-            series12.Name = "Inventario promedio";
-            this.Chart.Series.Add(series7);
-            this.Chart.Series.Add(series8);
-            this.Chart.Series.Add(series9);
-            this.Chart.Series.Add(series10);
-            this.Chart.Series.Add(series11);
-            this.Chart.Series.Add(series12);
+            series19.ChartArea = "ChartArea";
+            series19.Legend = "Legend1";
+            series19.Name = "Inventario Inicial";
+            series20.ChartArea = "ChartArea";
+            series20.Legend = "Legend1";
+            series20.Name = "Numero aleatorio";
+            series21.ChartArea = "ChartArea";
+            series21.Legend = "Legend1";
+            series21.Name = "Demanda Ajustada";
+            series22.ChartArea = "ChartArea";
+            series22.Legend = "Legend1";
+            series22.Name = "Inventario Final";
+            series23.ChartArea = "ChartArea";
+            series23.Legend = "Legend1";
+            series23.Name = "Faltante";
+            series24.ChartArea = "ChartArea";
+            series24.Legend = "Legend1";
+            series24.Name = "Inventario promedio";
+            this.Chart.Series.Add(series19);
+            this.Chart.Series.Add(series20);
+            this.Chart.Series.Add(series21);
+            this.Chart.Series.Add(series22);
+            this.Chart.Series.Add(series23);
+            this.Chart.Series.Add(series24);
             this.Chart.Size = new System.Drawing.Size(568, 316);
             this.Chart.TabIndex = 0;
             this.Chart.Text = "chart1";
@@ -122,13 +122,24 @@
             this.RInput.TabIndex = 4;
             this.RInput.TextChanged += new System.EventHandler(this.RInput_TextChanged);
             // 
-            // comboBox1
+            // Years
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(26, 185);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 5;
+            this.Years.FormattingEnabled = true;
+            this.Years.Items.AddRange(new object[] {
+            "Año 1",
+            "Año 2",
+            "Año 3",
+            "Año 4",
+            "Año 5",
+            "Año 6",
+            "Año 7",
+            "Año 8",
+            "Año 9",
+            "Año 10"});
+            this.Years.Location = new System.Drawing.Point(26, 185);
+            this.Years.Name = "Years";
+            this.Years.Size = new System.Drawing.Size(121, 21);
+            this.Years.TabIndex = 5;
             // 
             // label3
             // 
@@ -145,7 +156,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(728, 350);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.Years);
             this.Controls.Add(this.RInput);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
@@ -166,7 +177,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox RInput;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox Years;
         private System.Windows.Forms.Label label3;
     }
 }

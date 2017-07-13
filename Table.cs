@@ -13,21 +13,21 @@ namespace InvestigacionDeOperaciones
      */
     public class Table
     {
-        public int[] inventarioInicial;
-        public float[] numeroAleatorio;
-        public int[] demandaAjustada;
-        public int[] inventarioFinal;
-        public int[] faltante;
-        public int[] inventarioMensualPromedio;
+        public double[] inventarioInicial;
+        public double[] numeroAleatorio;
+        public double[] demandaAjustada;
+        public double[] inventarioFinal;
+        public double[] faltante;
+        public double[] inventarioMensualPromedio;
 
         public Table()
         {
-            inventarioInicial = new int[12];
-            numeroAleatorio = new float[12];
-            demandaAjustada = new int[12];
-            inventarioFinal = new int[12];
-            faltante = new int[12];
-            inventarioMensualPromedio = new int[12];
+            inventarioInicial = new double[12];
+            numeroAleatorio = new double[12];
+            demandaAjustada = new double[12];
+            inventarioFinal = new double[12];
+            faltante = new double[12];
+            inventarioMensualPromedio = new double[12];
         }
     }
 }

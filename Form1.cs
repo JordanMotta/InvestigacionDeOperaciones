@@ -18,15 +18,14 @@ namespace InvestigacionDeOperaciones
         {
             InitializeComponent();
             tables = new List<Table>();
-            for (int i = 0; i < 10; i++)
+            for (int n = 0; n < Chart.Series.Count; n++)
             {
-                Chart.Series[0].Points.Add(new double[] {12});
-                Chart.Series[1].Points.Add(new System.Windows.Forms.DataVisualization.Charting.DataPoint(0, 12));
-                Chart.Series[1].Points.Add(new System.Windows.Forms.DataVisualization.Charting.DataPoint(1, 10));
-                Chart.Series[1].Points.Add(new System.Windows.Forms.DataVisualization.Charting.DataPoint(2, 3));
-                Chart.ChartAreas[0].AxisX.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Months;
-
+                for (int i = 0; i < 12; i++)
+                {
+                    Chart.Series[n].Points.Add(new System.Windows.Forms.DataVisualization.Charting.DataPoint(i, 5));
+                }    
             }
+            Chart.ChartAreas[0].AxisX.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Months;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -46,13 +45,7 @@ namespace InvestigacionDeOperaciones
 
         private void update()
         {
-            foreach (Table table in tables)
-            {
-                for (int month = 0; month < 12; month++)
-                {
-
-                }
-            }
+            
         }
 
         private List<Table> getTables()

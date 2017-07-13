@@ -35,12 +35,24 @@ namespace InvestigacionDeOperaciones
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            Update();
+            update();
+            showData();
+        }
+
+        private void Years_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Console.WriteLine("Item selected: " + Years.Text);
         }
 
         private void RInput_TextChanged(object sender, EventArgs e)
         {
-            Update();
+            update();
+            showData();
+        }
+
+        private void showData()
+        {
+            
         }
 
         private void update()

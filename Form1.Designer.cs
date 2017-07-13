@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series19 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series20 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series21 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series22 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series23 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series24 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series37 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series38 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series39 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series40 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series41 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series42 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.Chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,41 +48,41 @@
             // 
             // Chart
             // 
-            chartArea4.AxisX.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Months;
-            chartArea4.AxisX.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Months;
-            chartArea4.IsSameFontSizeForAllAxes = true;
-            chartArea4.Name = "ChartArea";
-            this.Chart.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.Chart.Legends.Add(legend4);
+            chartArea7.AxisX.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Months;
+            chartArea7.AxisX.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Months;
+            chartArea7.IsSameFontSizeForAllAxes = true;
+            chartArea7.Name = "ChartArea";
+            this.Chart.ChartAreas.Add(chartArea7);
+            legend7.Name = "Legend1";
+            this.Chart.Legends.Add(legend7);
             this.Chart.Location = new System.Drawing.Point(148, 22);
             this.Chart.Name = "Chart";
             this.Chart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
             this.Chart.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            series19.ChartArea = "ChartArea";
-            series19.Legend = "Legend1";
-            series19.Name = "Inventario Inicial";
-            series20.ChartArea = "ChartArea";
-            series20.Legend = "Legend1";
-            series20.Name = "Numero aleatorio";
-            series21.ChartArea = "ChartArea";
-            series21.Legend = "Legend1";
-            series21.Name = "Demanda Ajustada";
-            series22.ChartArea = "ChartArea";
-            series22.Legend = "Legend1";
-            series22.Name = "Inventario Final";
-            series23.ChartArea = "ChartArea";
-            series23.Legend = "Legend1";
-            series23.Name = "Faltante";
-            series24.ChartArea = "ChartArea";
-            series24.Legend = "Legend1";
-            series24.Name = "Inventario promedio";
-            this.Chart.Series.Add(series19);
-            this.Chart.Series.Add(series20);
-            this.Chart.Series.Add(series21);
-            this.Chart.Series.Add(series22);
-            this.Chart.Series.Add(series23);
-            this.Chart.Series.Add(series24);
+            series37.ChartArea = "ChartArea";
+            series37.Legend = "Legend1";
+            series37.Name = "Inventario Inicial";
+            series38.ChartArea = "ChartArea";
+            series38.Legend = "Legend1";
+            series38.Name = "Numero aleatorio";
+            series39.ChartArea = "ChartArea";
+            series39.Legend = "Legend1";
+            series39.Name = "Demanda Ajustada";
+            series40.ChartArea = "ChartArea";
+            series40.Legend = "Legend1";
+            series40.Name = "Inventario Final";
+            series41.ChartArea = "ChartArea";
+            series41.Legend = "Legend1";
+            series41.Name = "Faltante";
+            series42.ChartArea = "ChartArea";
+            series42.Legend = "Legend1";
+            series42.Name = "Inventario promedio";
+            this.Chart.Series.Add(series37);
+            this.Chart.Series.Add(series38);
+            this.Chart.Series.Add(series39);
+            this.Chart.Series.Add(series40);
+            this.Chart.Series.Add(series41);
+            this.Chart.Series.Add(series42);
             this.Chart.Size = new System.Drawing.Size(568, 316);
             this.Chart.TabIndex = 0;
             this.Chart.Text = "chart1";
@@ -140,6 +140,7 @@
             this.Years.Name = "Years";
             this.Years.Size = new System.Drawing.Size(121, 21);
             this.Years.TabIndex = 5;
+            this.Years.SelectedIndexChanged += new System.EventHandler(this.Years_SelectedIndexChanged);
             // 
             // label3
             // 

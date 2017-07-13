@@ -1,0 +1,146 @@
+Parametros:
+q y r
+comienzo con q=200 y r=100
+
+Prof: "comienzen con q = 200 y r = 100 y el inventario inicial en 150"
+
+
+pseudo codigos:
+
+Programa CostosDeInventario
+Recibe (q=unidades a ordenar), (r=nivel de reorden)
+	Variables
+	1)elijo 12 numero aleatorios (genero uno para cada mes)
+	para el numero 1 en ListaNumeros
+	2)mesLlegadaOrden
+	3)pedidoRealizado
+	4)factorEstacionarioMes (Lista)
+	5)NroOrden
+	6)faltanteAcumulado
+
+	Inicio
+	inventariofinal[0] = 150
+	faltanteAcumulado = 0
+	mesLlegadaOrden = 0
+	NroOrden = 0
+	pedidoRealizado = false
+
+	para i desde 1 hasta 12
+	inicio bucle
+		numeroAleatorio = (genero numero aleatoreo)
+		x[i] = Programa(ValorDemanda(numeroAleatorio))
+		DemandaAjustada[i] = x * Programa(factorEstacionarioMes(i))
+
+		i = mesLlegadaOrden?
+			si, entonces
+				inventarioInicial[i] = q - faltanteAcumulado
+				faltanteAcumulado = 0
+				pedidoRealizado = false
+			no, entonces
+				inventarioInicial[i] = inventarioFinal[i-1]
+		fin condicion
+
+		inventarioFinal[i] = InventarioInicial[i] - DemandaAjustada[i]
+
+			(InventarioFinal[i] < nivelDeReorden[i]) y (pedidoRealizado = false)?
+			Si, entonces
+			 	numeroAleatorio = (genero numero aleatoreo)
+			 	(calculo tiempo de entrega) 
+			 	mesLlegadaOrden = i + Programa(TiempoEntrega(numeroAleatorio)) + 1
+			 	pedidoRealizado = true
+			 	NroOrden = NroOrden + 1
+			 	orden[i] = NroOrden
+			fin condicion
+			
+			InventarioFinal < 0?
+				 Si, entonces
+				 	faltante[i] = abs(inventarioFinal[i])
+				 	inventarioFinal[i] = 0
+				 	faltanteAcumulado = faltanteAcumulado + faltante[i]
+				 no,entonces
+				 	faltante[i] = 0
+			fin condicion
+
+			faltanteAcumulado = 0?
+			si, entonces
+				InvMensProm = (InventarioInicial[i] + InventarioFinal[i])/2;
+			no, entonce
+				InvMensProm = (InventarioInicial[i]/2)*(InventarioInicial[i]/DemandaAjustada[i])
+			fin condicion
+
+
+	fin bucle
+
+
+	Fin
+
+
+Programa ValorDemanda
+Recibe numeroAleatorio
+	inicio
+	verifica el rango en el que se encuentra
+	devuelve el numero de demanda
+	fin
+
+
+
+Programa Tiempo Entrega
+Recibe numeroAleatorio
+	inicio
+		verifica el rango en el que se encuentra
+		devuelve el numero de meses
+	fin
+
+
+
+
+Valores de Demanda:
+Si 0.000 <=	R 	< 		0.010, 	entonces x = 35 
+Si 0.010 <= R 	< 	0.025, 		entonces x = 36 
+Si 0.025 <= R 	< 	0.045, 		entonces x = 37 
+Si 0.045 <= R 	< 	0.065, 		entonces x = 38 
+Si 0.065 <= R 	< 	0.087, 		entonces x = 39 
+Si 0.087 <= R 	< 	0.110, 		entonces x = 40 
+Si 0.110 <= R 	< 	0.135, 		entonces x = 41 
+Si 0.135 <= R 	< 	0.162. 		entonces x = 42 
+Si 0.162 <= R 	< 	0.190. 		entonces x = 43 
+Si 0.190 <= R 	< 	0.219, 		entonces x = 44 
+Si 0.219 <= R 	< 	0.254, 		entonces x = 45 
+Si 0.254 <= R 	< 	0.299, 		entonces x = 46 
+Si 0.299 <= R 	< 	0.359, 		entonces x = 47 
+Si 0.359 <= R 	< 	0.424, 		entonces x = 48 
+Si 0.424 <= R 	< 	0.494. 		entonces x = 49 
+Si 0.494 <= R 	< 	0.574, 		entonas  x = 50 
+Si 0.574 <= R 	< 	0.649. 		entonces x = 51 
+Si 0.649 <= R 	< 	0.719. 		entonces x = 52 
+Si 0.719 <= R 	< 	0.784, 		entonces x = 53 
+Si 0.784 <= R 	< 	0.844, 		entonces x = 54 
+Si 0.844 <= R 	< 	0.894, 		entonces x = 55 
+Si 0.894 <= R 	< 	0.934, 		entonces x = 56 
+Si 0.934 <= R 	< 	0.964. 		entonces x = 57 
+Si 0.964 <= R 	< 	0.980. 		entonces x = 58 
+Si 0.980 <= R 	< 	0.995, 		entonces x = 59 
+Si 0.995 <= R 	<= 	1.000. 		entonces x = 60
+
+
+
+
+Factores Estacionales:
+Mes	Factor Estacional	
+1	1.2	
+2	1	
+3	0.9	
+4	0.8	
+5	0.8	
+6	0.7	
+7	0.8	
+8	0.9	
+9	1	
+10	1.2	
+11	1.3	
+12	1.4	
+
+Tiempos de Entrega
+Si 0.00 5 If < 	0.30. entonces x = 	1 mes 
+Si 0.30 5 R < 	0.70. entonces x = 	2 meses 
+Si 0.70 s R Si 	1.00, entonces x= 	3 meses
